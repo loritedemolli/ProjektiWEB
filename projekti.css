@@ -188,3 +188,74 @@ footer {
  .footer-bottom p {
     margin: 0;
  }
+
+ /* Per me e bo faqen responsive ne pajisje mobile qe jane below 768px*/
+
+ @media (max-width: 768px) {
+    .nav-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+.nav-bar nav a {
+    padding: 15px;
+}
+
+ .hero-section {
+    padding: 30px 10px;
+ }
+
+ .hero-content h2 {
+    font-size: 2cm;
+ }
+ 
+ .container {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .product-category {
+    width 100%
+    margin-bottom:  20px;
+ }
+ .footer-main {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ .footer-section.payment-methods img {
+    width: 30px;
+    margin-right: 10px;
+ }
+ }
+
+ /*Per screen me te medha*/
+
+ @media (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ .nav-bar h1{
+    font-size: 1.8cm;
+ }
+ .container {
+    flex-direction: column;
+    align-items: center;
+ }
+ .product-category {
+    width: 80%;
+    margin-bottom: 20px;
+ }
+ .footer-main {
+    flex-direction: column;
+    align-items: center;
+ }
+ .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+ }
+}
