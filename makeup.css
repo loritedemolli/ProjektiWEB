@@ -41,3 +41,36 @@ body {
     width: 20px;
     vertical-align: middle;
 }
+
+
+#makeup-products {
+    text-align: center;
+    padding: 30px 40px;
+    background-color: #fff;
+}
+.intro h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.dropdown-box {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.dropdown-box:hover {
+    border-color: #000;
+}
