@@ -1,3 +1,3 @@
 # ProjektiWEB
-bfjbfjf
-fjebfjebfieei
+
+https://github.com/loritedemolli/ProjektiWEB.git
