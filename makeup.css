@@ -224,3 +224,49 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar nav a {
+        padding: 15px;
+    }
+
+    #makeup-products {
+        padding: 20px;
+    }
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .produkti {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .intro h2 {
+        font-size: 2em;
+    }
+    .intro p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar h1 {
+        font-size: 1.8em;
+    }
+    #makeup-products {
+        padding: 30px 10px;
+    }
+    .product-container {
+        justify-content: center;
+    }
+    .produkti {
+        width: 45%;
+    }
+}
