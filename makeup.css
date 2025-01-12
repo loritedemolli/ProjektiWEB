@@ -52,6 +52,7 @@ body {
     font-size: 32px;
     color: #333;
     margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .intro p {
@@ -88,9 +89,15 @@ body {
     overflow: hidden;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding-bottom: 50px;
+    padding: 20px;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 450px; 
+    display: flex; 
+    flex-direction: column; 
+
 }
 .produkti img {
     width: 90%;
@@ -127,37 +134,40 @@ body {
     text-decoration: line-through; /*line through e bon vizen kur bohet zbritja prej qmimit original*/
 }
 .buy-now {
-width: 80%;
 margin: 10px auto;
-display: block;
-padding: 10px 20px;
 background-color: #ff69b4;
 color: #fff;
-border: none;
 border-radius: 5px;
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
 transition: background-color 0.3s ease, transform 0.3s ease;
+
 }
 
 .buy-now:hover {
-background-color: #ff1493;
-transform: translateY(-2px);
+background-color: #ff1493;;
 }
 .add-to-cart {
     background-color: #ff9900;  
     color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
 }
 
 .add-to-cart:hover {
     background-color: #e68a00;  
 }
+
+.buy-now, .add-to-cart {
+    width: 80%; 
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.buy-now:hover, .add-to-cart:hover {
+    transform: translateY(-2px);
+}
+
 footer {
     background-color: #222;
     color: #fff;

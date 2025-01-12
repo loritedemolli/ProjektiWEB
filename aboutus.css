@@ -87,12 +87,14 @@ body, html {
     color: #333;
     margin-bottom: 10px;
     text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
 }
 .teksti h3 {
     font-size: 28px;
     color: #333;
     margin-bottom: 10px;
     text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .teksti p {
