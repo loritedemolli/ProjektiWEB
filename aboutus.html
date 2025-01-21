@@ -28,41 +28,47 @@
             </nav>
         </div>
     </header>
-    <section class="aboutus">
-        <div class="about">
-      <img src="about us/3.3.jpg" alt="3">
-            <div class="teksti">
-            <h3>About Us</h3>
-            <p>Welcome to Diva Glow - your ultimate destination for the right products!</p>
-            <p>Our mission as a team is to empower every woman to look and feel their best every day. We tend to inspire confidence and celebrate diversity by offering all types of products , with different type of shades , skin types and tones. </p>
+    <section class="aboutus-slider">
+        <div class="slider">
+            <div class="about">
+                <img src="about us/njo.jpg" alt="3">
+                <div class="teksti">
+                    <h3>About Us</h3>
+                    <p>Welcome to Diva Glow - your ultimate destination for the right products!</p>
+                    <p>Our mission as a team is to empower every woman to look and feel their best every day. We tend to inspire confidence and celebrate diversity by offering all types of products, with different type of shades, skin types and tones</p>
+                </div>
+            </div>
+            <div class="about">
+                <img src="about us/dy.jpg" alt="1">
+                <div class="teksti">
+                    <h3>Our Strong Points</h3>
+                    <h1>- High Quality Products</h1>
+                    <p>- All our products are tested to ensure you safe use!</p>
+                    <h1>- Innovation and Trends</h1>
+                    <p>- We continuously update our collection with the latest trends!</p>
+                    <h1>- Fast Customer Service</h1>
+                    <p>- You won't have to wait much with us!</p>
+                    <h1>- Hard Working Team</h1>
+                    <p>- We are committed to offering the best for our clients with our hard-working team!</p>
+                </div>
+            </div>
+            <div class="about">
+                <img src="about us/re.jpg" alt="2">
+                <div class="teksti">
+                    <h1>- Make Up</h1>
+                    <p>- Find the best of brands as Yves Saint Laurent, Chanel, Rare Beauty, Charlotte Tilbury.</p>
+                    <h1>- Perfumes</h1>
+                    <p>- Luxury brands as Xerjoff, Tom Ford, YSL, Jean Paul Gaultier, Prada, Valentino.</p>
+                    <h1>- Skincare</h1>
+                    <p>- Safe brands as La Roche Posay, The Ordinary, Fenty Skin, Cera Ve make your skin glow and get rid of any problems you are having!</p>
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="about">
-            <img src="about us/1.1.jpg" alt="3">
-            <div class="teksti">
-            <h3>Our Strong Points</h3>
-            <h1>- High Quality Products</h1>
-            <p>- All our products are tested to ensure you safe use!</p>
-            <h1>- Innovation and Trends</h1>
-            <p>- We continously update our collection with the latest trends!</p>
-            <h1>- Fast Customer Service</h1>
-            <p>- You won't have to wait much with us!</p>
-            <h1>- Hard Working Team</h1>
-         <p>- We are commited to offering the best for our clients with our hard-working team!  </p>
-        </div>
-        </div>
-        <div class="about">
-            <img src="about us/2.jpg" alt="3">
-            <div class="teksti">
-                <h1>- Make Up</h1>
-                <p>- Find the best of brands as Yves Saint Laurent, Chanel , Rare Beauty , Charlotte Tilbury. Bold colors, shades that match every occassion , for everyday use or for extravagant nights , you choose! </p>
-                <h1>- Perfumes</h1>
-                <p>- Luxury brands as Xerjoff, Tom Ford, YSL , Jean Paul Gaultier , Prada , Valentino. The best fragrances you'll ever smell, making you unforgettable to everyone!</p>
-                <h1>- Skincare</h1>
-                <p>- Safe brands as La Roche Posay , The ordinary , Fenty Skin , Cera Ve make your skin glow and get rid of any problematic you are having!</p>
-        </div>
-        </div>
+        </section>
+        <button class="prev" onclick="leviz(-1)">&#10094;</button>
+        <button class="next" onclick="leviz(1)">&#10095;</button>
     </section>
+    
     <footer>
         <div class="footer-main">
             <div class="footer-section brand-info">
@@ -102,6 +108,21 @@
             <p>&copy; 2024 Diva Glow. All Rights Reserved.</p>
         </div>
     </footer>
-    
+    <script>
+        let index = 0;
+
+        function leviz(step) {
+            const slides = document.querySelectorAll('.about');
+            const totali = slides.length;
+            const slideri = document.querySelector('.slider');
+            index += step;
+            if (index >= totali) {
+                index = 0;  
+            } else if (index < 0) {
+                index = totali - 1;  
+            }
+            slideri.style.transform = `translateX(-${index * 100}%)`; 
+        }
+    </script>
 </body>
 </html>
