@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+    <div class="left">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Add Products</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Contact Messages</a></li>
+        </ul>
+        <div class="logout">
+            <a href="#">Log Out</a>
+        </div>
+       </div>
+    <div class="add">
+        <h1>Add New Product</h1>
+        <div class="containeri">
+            <input type="text" placeholder="Product Name" required>
+            <input type="text" placeholder="Discounted Price (€)" required>
+            <input type="text" placeholder="Original Price (€)" required>
+            <input type="file" required>
+            <input type="text" placeholder="Short Description" required>
+            <button type="submit">Add Product</button>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background: #ffe6f2;
+        }
+
+        .left {
+            width: 200px;
+            background: #ff66b2;
+            color: white;
+            padding-top: 20px;
+            height: 100%;
+            position: fixed;
+            text-align: center;
+        }
+
+        .left h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .left ul {
+            list-style: none;
+        }
+
+        .left ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ff3385;
+        }
+
+        .left ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+        }
+
+        .left ul li:hover {
+            background: #ff3385;
+        }
+
+        .logout {
+            margin-top: 50px;
+            padding: 15px;
+            background: #ff3385;
+            cursor: pointer;
+            font-size: 16px;
+            border-top: 1px solid white;
+        }
+
+        .logout a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+
+        .logout:hover {
+            background: #ff1a66;
+        }
+
+        .add {
+            margin-left: 200px;
+            padding: 40px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .add h1 {
+            font-size: 26px;
+            color: #ff3385;
+            margin-bottom: 20px;
+        }
+
+        .containeri {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .containeri input, .containeri button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ff66b2;
+            border-radius: 5px;
+        }
+
+        .containeri button {
+            background: #ff66b2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .containeri button:hover {
+            background: #ff3385;
+        }
+    </style>
+</body>
+</html>
