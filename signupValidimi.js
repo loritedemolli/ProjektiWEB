@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
 const form = document.getElementById('loginForm');
-
     form.addEventListener('submit', function(event) {
         let valid = true;
         const name = document.getElementById('name').value;
         const surname = document.getElementById('surname').value;
         const email = document.getElementById('email').value;
         const username = document.getElementById('username').value;
-        const phone = document.getElementById('phone').value;
-        const address = document.getElementById('address').value;
+        const password = document.getElementById('password').value;
             const namePattern = /^[a-zA-Z]+$/; // e perdorim per te dyjat emrin dhe mbiemrin
         if (!namePattern.test(name)) {
             alert('Please enter a valid name.');
@@ -28,19 +26,16 @@ const form = document.getElementById('loginForm');
             alert('Username can contain only letters and numbers. Please enter a valid username.');
             valid = false;
         }
-        const phonePattern = /^\+?[0-9]{10,15}$/;
-        if (!phonePattern.test(phone)) {
-            alert('Please enter a valid phone number. (Allowed length of numbers is 10-15)');
-            valid = false;
-        }
-        if (address.trim() === '') {
-            alert('Please enter your delivery address.');
+        const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        if (!passwordPattern.test(password)) {
+            alert('Password must be at least 8 characters long, include 1 uppercase letter, 1 number, and 1 special symbol.');
             valid = false;
         }
 
         if (!valid) {
             event.preventDefault();
         }
+       
     });
 });
 
