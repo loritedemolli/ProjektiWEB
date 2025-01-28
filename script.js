@@ -20,24 +20,20 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
     //Validimi i Username(email)
     if (!emailPattern.test(username)) {
-        usernameError.textContent = "Please enter a valid email address ending with a domain (e.g., .com).";
+        alert('Please enter a valid email address ending with a domain (e.g., .com)');
         isValid = false;
-    } else {
-        usernameError.textContent = "";
-    }
+    } 
 
     // validimi i passwordit
     if (!passwordPattern.test(password)) {
-        passwordError.textContent = "Password must be at least 8 characters long, include 1 uppercase letter, 1 number, and 1 special symbol.";
+        alert('Password must be at least 8 characters long, include 1 uppercase letter, 1 number, and 1 special symbol.');
         isValid = false;
-    } else {
-        passwordError.textContent = "";
-    }
+    } 
 
     // nese PO valide ateher kaloje 
-    if (isValid) {
-        alert('Login successful!');
-    
+    if (!valid) {
+        event.preventDefault();
     }
+   
 });
 
