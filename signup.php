@@ -1,100 +1,50 @@
 <?php
-session_start();
-include_once 'Databaze.php';
-include_once 'User.php';
+
+include_once 'database/db.php';
+include_once 'database/user.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
- $db = new Databaze();
-$user = new User($db->getConnection());
-
+    $db = new Database();
+    $user = new User($db->getConnection());
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $username = $_POST['username'];
     $password = $_POST['password'];
 
     if ($user->signup($name, $surname, $username, $password)) {
-        header("Location: loginform.php");
+        header("Location: login.php");
         exit;
     } else {
         echo "An error occurred while registration.";
     }
-}
-
+} 
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="login_Stili.css">
+<link rel="stylesheet" href="assets/css/mycss.css">
 </head>
-<body>
-  
-    <div class="wrapcont">
-        <div class="login-container">
-            <h1>Sign Up</h1>
-            <form id="loginForm" method="POST">
-                <label for="name">First Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <label for="surname">Last Name</label>
-                <input type="text" id="surname" name="surname" placeholder="Enter your last name" required>
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <button type="submit">Register</button>
-            </form>
-            <div class="options">
-                <a href="loginform.html" class="option-link">Back To Login</a>
-            </div>
+<div class="wrapcont">
+    <div class="login-container">
+        <h1 class="login-title">Sign Up</h1>
+        <form class="login-form " id="loginForm" action="signup.php" method="POST">
+            <label class="login-label" for="name">First Name</label>
+            <input class="login-input" type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label class="login-label" for="surname">Last Name</label>
+            <input class="login-input" type="text" id="surname" name="surname" placeholder="Enter your last name"
+                required>
+            <label class="login-label" for="username">Username</label>
+            <input class="login-input" type="text" id="username" name="username" placeholder="Enter your username"
+                required>
+            <label class="login-label" for="password">Password</label>
+            <input class="login-input" type="password" id="password" name="password" placeholder="Enter your password"
+                required>
+            <button class="login-button" type="submit">Register</button>
+        </form>
+        <div class="options">
+            <a href="login.php" class="option-link">Back To Login</a>
         </div>
     </div>
-    <footer>
-        <div class="footer-main">
-            <div class="footer-section brand-info">
-                <h3>Diva Glow</h3>
-                <p>Explore our premium range of beauty products and find your perfect look.</p>
-            </div>
-
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section support">
-                <h3>Customer Support</h3>
-                <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section payment-methods">
-                <h3>Payment Methods</h3>
-                <img src="fotot/visa.png" alt="Visa">
-                <img src="fotot/mastercard.png" alt="Mastercard">
-                <img src="fotot/pay.png" alt="PayPal">
-            </div>
-
-            <div class="footer-section social-media">
-                <h3>Follow Us</h3>
-                <a href="https://facebook.com"><img src="fotot/facebook.png" alt="Facebook"></a>
-                <a href="https://instagram.com"><img src="fotot/i.png" alt="Instagram"></a>
-                <a href="https://tiktok.com"><img src="fotot/ti.png" alt="TikTok"></a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Diva Glow. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <script src="signupValidimi.js"></script>
-</body>
-</html>
+</div>
+<script src="assets/js/signupValidimi.js"></script>
+<?php
+include_once 'inc/footer.php';
+?>
