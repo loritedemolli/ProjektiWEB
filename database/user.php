@@ -24,6 +24,20 @@ class User {
         }
     } 
 
+    // Login Function (tash e bon store rolin e perdoruesit ne sesion)
+    public function login($username, $password) {
+        $query = "SELECT * FROM users WHERE username = :username LIMIT 1";
+        $st = $this->connection->prepare($query);
+        $st->bindParam(':username', $username);
+        $st->execute();
+    
+        $user = $st->fetch(PDO::FETCH_ASSOC);
+    
+        if ($user && password_verify($password, $user['password'])) {
+            return $user; 
+        }
+        return false;
+    }
     
 }
 ?>
