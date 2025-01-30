@@ -1,0 +1,956 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#header-bar {
+    background-color: #ff9dce;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 235, 243, 0.8);
+    padding: 15px 30px;
+
+}
+
+.nav-bar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-bar nav a {
+    margin: 0 15px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.nav-bar nav a:hover {
+    color: #ff1493;
+}
+
+footer {
+    background-color: #222;
+    color: #FFF;
+    padding: 40px 0;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.footer-section {
+    max-width: 180px;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ff69b4;
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ff69b4;
+}
+
+.payment-methods img,
+.social-media img {
+    width: 35px;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+}
+
+.payment-methods img:hover,
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* index.php */
+.hero-section {
+    background-image: url('../img/pages/end.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: rgb(42, 36, 80);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cart-icon {
+    width: 20px;
+    vertical-align: middle;
+
+}
+
+.search-button input[type="text"] {
+    width: 200px;
+    padding: 8px 15px;
+    border: 2px solid #ff69b4;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3 ease;
+}
+
+.search-button {
+    background-color: transparent;
+    position: relative;
+    border: none;
+}
+
+.search-button input[type="text"]:hover,
+.search-button input[type="text"]:focus {
+    border-color: #ff1493;
+    box-shadow: 0px 0px 5px rgba(255, 20, 147, 0.5);
+}
+
+.search-button input [type="text"]::placeholder {
+    color: #999;
+    font-style: italic;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.product-category {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+}
+
+.product-category img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.product-category:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* aboutus.css */
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: 114vh;
+    border-radius: 30px;
+    display: flex;
+    width: 100%;
+    transition: transform 0.9s ease-in-out;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 114vh;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teksti {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 30%;
+    text-align: right;
+}
+
+.teksti h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+.teksti p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.teksti h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* css i krejte produkteve */
+
+
+#makeup-products {
+    text-align: center;
+    padding: 30px 40px;
+    background-color: #fff;
+}
+.intro h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.dropdown-box {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.dropdown-box:hover {
+    border-color: #000;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.produkti {
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 450px; 
+    display: flex; 
+    flex-direction: column; 
+
+}
+.produkti img {
+    width: 90%;
+    height: 250px;
+    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.produkti .produkti-info {
+    padding: 5px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product .produkti-info p {
+    margin-bottom: 5px;
+}
+.short-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.zbritja {
+    font-size: 18px;
+    color: red; /* ktu qmimi kur aplikohet zbritja*/
+}
+
+.original-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through; /*line through e bon vizen kur bohet zbritja prej qmimit original*/
+}
+.buy-now {
+margin: 10px auto;
+background-color: #ff69b4;
+color: #fff;
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.buy-now:hover {
+background-color: #ff1493;;
+}
+.add-to-cart {
+    background-color: #ff9900;  
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #e68a00;  
+}
+
+.buy-now, .add-to-cart {
+    width: 80%; 
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.buy-now:hover, .add-to-cart:hover {
+    transform: translateY(-2px);
+}
+/* cart.css */
+
+/* Cart Section */
+.cart-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Product Box */
+.product-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-pricing {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.discount-price {
+    font-size: 18px;
+    color: #e60073;
+    font-weight: bold;
+}
+
+.remove-btn {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #cc0033;
+}
+
+
+
+/* contactus_stili.css */
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #fcfbfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    /*.h1{*/
+
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-info ul li a {
+    color: #ff57a8;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form-i  */
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contact-label {
+    /*label{*/
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-input,
+.contact-textarea {
+    /* input, textarea { */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.contact-button {
+    /*button { */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff9cc5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.contact-button:hover {
+    /*button:hover { */
+    background-color: #ff61c0;
+}
+
+
+/* Per me e bo faqen responsive ne pajisje mobile qe jane below 768px*/
+@media (max-width: 768px) {
+
+    /*header and footer.php*/
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-bar nav a {
+        padding: 15px;
+    }
+    .hero-section {
+        padding: 30px 10px;
+    }
+    .hero-content h2 {
+        font-size: 2cm;
+    }
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-section.payment-methods img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    /*index.php*/
+    .product-category {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* bestseller.css */
+    #makeup-products {
+        padding: 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produkti {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    /* contactus.css */
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+    }
+}
+
+/*Per screen me te medha*/
+
+@media (max-width: 1024px) {
+
+    /*header and footer.php*/
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar h1 {
+        font-size: 1.8cm;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*index.php*/
+    .product-category {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* bestseller.css */
+    #makeup-products {
+        padding: 30px 10px;
+    }
+
+    .product-container {
+        justify-content: center;
+    }
+
+    .produkti {
+        width: 45%;
+    }
+    /* contactus.css */
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 18px;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        padding: 8px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+
+
+/*login_Stili.css*/
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #fef5f9; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+
+.wrapcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 20px;
+}
+
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+    color: #555;
+}
+
+.login-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #ffb6c1; 
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ff9cc5; 
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option-link {
+    color: #f90b9a;
+
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.option-link:hover {
+    text-decoration: underline;
+    color: #f90b9a;
+}
+
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .option-link {
+        font-size: 12px;
+    }
+}
+
+
+/*admin dashboard*/
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .dashboard-container {
+        display: flex;
+        height: 100vh;
+        background: #ffe6f2;
+    }
+
+    .sidebar {
+        width: 250px;
+        background: #ff66b2;
+        color: white;
+        height: 100vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        padding: 15px;
+        border-bottom: 1px solid #ff3385;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    .sidebar ul li:hover {
+        background: #ff3385;
+    }
+
+    .logout {
+        margin-top: 50px;
+        background: #ff3385;
+    }
+
+    .logout:hover {
+        background: #ff1a66;
+    }
+
+    .dashboard-content {
+        flex-grow: 1;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .dashboard-content h1 {
+        font-size: 26px;
+        color: #ff3385;
+        margin-bottom: 20px;
+    }
+
+    .containeri {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .containeri input, .containeri button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ff66b2;
+        border-radius: 5px;
+    }
+
+    .containeri button {
+        background: #ff66b2;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .containeri button:hover {
+        background: #ff3385;
+    }
