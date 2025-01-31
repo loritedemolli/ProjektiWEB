@@ -310,6 +310,7 @@ footer {
     color: #333;
     margin-bottom: 10px;
     font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
 }
 
 .intro p {
@@ -807,7 +808,7 @@ background-color: #ff1493;;
 }
 
 .login-button {
-    background-color: #ffb6c1; 
+    background-color: #ff66b2; 
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -954,3 +955,161 @@ background-color: #ff1493;;
     .containeri button:hover {
         background: #ff3385;
     }
+.containeri button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ff66b2;
+    border-radius: 5px;
+    background: #ff66b2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.containeri button:hover {
+    background: #ff3385;
+}
+
+
+table a {
+    color: #ff66b2;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ff66b2;
+    transition: background-color 0.3s ease;
+}
+
+table a:hover {
+    background: #ff3385;
+    color: white;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ff66b2;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #ff66b2;
+    color: white;
+}
+
+tr:hover {
+    background-color: #ffe6f2;
+}
+
+tr td {
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #ff66b2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff3385;
+    transform: translateY(-2px); 
+}
+
+.btn:active {
+    background-color: #ff1a66;
+    transform: translateY(2px); 
+}
+/* Forma per edit/create */
+.fo {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.fo label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.fo input, .fo select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ff66b2;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.fo input:focus, .fo select:focus {
+    outline: none;
+    border-color: #ff3385;
+    box-shadow: 0 0 5px rgba(255, 51, 133, 0.5);
+}
+
+.fo button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #ff66b2;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fo button:hover {
+    background: #ff3385;
+    transform: translateY(-2px);
+}
+
+.fo button:active {
+    background: #ff1a66;
+    transform: translateY(2px);
+}
+
+.fo input[type="text"], .fo select {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.fo {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.fo input:focus, .fo select:focus {
+    border-color: #ff3385;
+    box-shadow: 0 0 5px rgba(255, 51, 133, 0.5);
+}
