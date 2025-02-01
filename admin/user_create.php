@@ -61,4 +61,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 </div>
 
-<?php include_once '../inc/footer.php'; ?>
+

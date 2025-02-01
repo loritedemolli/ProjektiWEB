@@ -117,7 +117,7 @@ footer {
 
 /* index.php */
 .hero-section {
-    background-image: url('../img/pages/end.jpg');
+    background-image: url('../img/pages/front.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -870,18 +870,21 @@ background-color: #ff1493;;
 
     .dashboard-container {
         display: flex;
-        height: 100vh;
+        min-height: 100vh; 
         background: #ffe6f2;
     }
+    
 
     .sidebar {
         width: 250px;
         background: #ff66b2;
         color: white;
-        height: 100vh;
+        min-height: 100vh; 
         padding: 20px;
         text-align: center;
+        overflow-y: auto;
     }
+    
 
     .sidebar h2 {
         margin-bottom: 20px;
@@ -1113,3 +1116,4 @@ tr td {
     border-color: #ff3385;
     box-shadow: 0 0 5px rgba(255, 51, 133, 0.5);
 }
+

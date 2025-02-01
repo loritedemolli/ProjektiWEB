@@ -72,4 +72,4 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
     </main>
 </div>
 
-<?php include_once '../inc/footer.php'; ?>
+

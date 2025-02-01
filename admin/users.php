@@ -70,4 +70,4 @@ $users = $db->getConnection()->query($query)->fetchAll(PDO::FETCH_ASSOC);
     </main>
 </div>
 
-<?php include_once '../inc/footer.php'; ?>
+
