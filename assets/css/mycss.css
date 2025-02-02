@@ -425,115 +425,74 @@ background-color: #ff1493;;
 .buy-now:hover, .add-to-cart:hover {
     transform: translateY(-2px);
 }
-/* cart.css */
 
-/* Cart Section */
+/* cart.css */
 .cart-container {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
 }
 
 .cart-container h2 {
     font-size: 28px;
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Product Box */
-.product-box {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
+.cart-footer {
+    margin-top: auto;
+    text-align: center;
     padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
 }
 
-.product-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.product-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.product-description {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.product-pricing {
-    margin-bottom: 15px;
-}
-
-.price {
-    font-size: 16px;
+.cart-footer p {
+    margin: 0;
     color: #999;
-    text-decoration: line-through;
-    margin-right: 10px;
 }
 
-.discount-price {
-    font-size: 18px;
-    color: #e60073;
+#empty-cart-message {
+    color: #ff3366;
     font-weight: bold;
-}
+    margin-bottom: 15px;
+} 
 
-.remove-btn {
-    padding: 10px 20px;
-    background-color: #ff3366;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.remove-btn:hover {
-    background-color: #cc0033;
-}
-
-
-
-/* contactus_stili.css */
+/* contactus.css */
 
 .contact-container {
-    max-width: 1200px;
+    max-width: 1500px; 
     margin: auto;
-    padding: 20px;
+    padding: 40px; 
     background: #fcfbfc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.contact-container h1{
+    font-family: 'Bebas Neue', sans-serif;
+}
 .contact-title {
-    /*.h1{*/
-
     text-align: center;
-    font-size: 32px;
+    font-size: 36px; 
     color: #333;
 }
 
 .contact-info {
-    margin-bottom: 30px;
+    margin-bottom: 40px; 
 }
 
 .contact-info h2 {
-    font-size: 24px;
+    font-size: 28px; 
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 15px; 
 }
 
 .contact-info p {
-    font-size: 16px;
+    font-size: 18px; 
     color: #666;
 }
 
@@ -543,8 +502,8 @@ background-color: #ff1493;;
 }
 
 .contact-info ul li {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 15px 0; 
+    font-size: 18px; 
 }
 
 .contact-info ul li a {
@@ -556,39 +515,35 @@ background-color: #ff1493;;
     text-decoration: underline;
 }
 
-/* Contact Form-i  */
+
 .contact-form h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 28px; 
+    margin-bottom: 20px; 
     color: #555;
 }
 
 .contact-label {
-    /*label{*/
     display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
+    margin-bottom: 10px; 
+    font-size: 16px; 
     color: #333;
 }
 
 .contact-input,
 .contact-textarea {
-    /* input, textarea { */
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px; 
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px; 
 }
 
-
 .contact-button {
-    /*button { */
     display: block;
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    padding: 12px; 
+    font-size: 18px; 
     color: #fff;
     background-color: #ff9cc5;
     border: none;
@@ -597,75 +552,15 @@ background-color: #ff1493;;
     transition: background-color 0.3s;
 }
 
-
 .contact-button:hover {
-    /*button:hover { */
     background-color: #ff61c0;
 }
 
 
-/* Per me e bo faqen responsive ne pajisje mobile qe jane below 768px*/
+/* Mobile */
 @media (max-width: 768px) {
-
-    /*header and footer.php*/
-    .nav-bar {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-bar nav a {
-        padding: 15px;
-    }
-    .hero-section {
-        padding: 30px 10px;
-    }
-    .hero-content h2 {
-        font-size: 2cm;
-    }
-    .footer-main {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-section {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .footer-section.payment-methods img {
-        width: 30px;
-        margin-right: 10px;
-    }
-
-    /*index.php*/
-    .product-category {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    /* bestseller.css */
-    #makeup-products {
-        padding: 20px;
-    }
-
-    .product-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .produkti {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .intro h2 {
-        font-size: 2em;
-    }
-
-    .intro p {
-        font-size: 1em;
-    }
-
-    /* contactus.css */
     .contact-container {
-        padding: 15px;
+        padding: 20px; 
     }
 
     .contact-title {
@@ -674,81 +569,52 @@ background-color: #ff1493;;
 
     .contact-info h2,
     .contact-form h2 {
-        font-size: 20px;
-    }
-
-    .contact-button {
-        font-size: 14px;
-    }
-}
-
-/*Per screen me te medha*/
-
-@media (max-width: 1024px) {
-
-    /*header and footer.php*/
-    .nav-bar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-bar h1 {
-        font-size: 1.8cm;
-    }
-
-    .footer-main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    /*index.php*/
-    .product-category {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* bestseller.css */
-    #makeup-products {
-        padding: 30px 10px;
-    }
-
-    .product-container {
-        justify-content: center;
-    }
-
-    .produkti {
-        width: 45%;
-    }
-    /* contactus.css */
-    .contact-title {
-        font-size: 24px;
-    }
-
-    .contact-info h2,
-    .contact-form h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .contact-input,
     .contact-textarea {
-        padding: 8px;
+        padding: 10px; 
     }
 
     .contact-button {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 16px; 
+        padding: 10px; 
     }
 }
+
+/*tablet*/
+@media (max-width: 1024px) {
+    .contact-container {
+        padding: 30px; 
+    }
+
+    .contact-title {
+        font-size: 30px; 
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 24px; 
+    }
+
+    .contact-input,
+    .contact-textarea {
+        padding: 10px; 
+    }
+
+    .contact-button {
+        font-size: 16px; 
+        padding: 10px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-container {
+        padding: 40px; 
+    }
+}
+
 
 
 
